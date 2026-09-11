@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Lumina Workspace</title>
+  <meta name="description" content="Learn more about Lumina Workspace, our mission, vision, and the team behind the product.">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen no-scrollbar font-sans">
+  
+  <!-- Navigation (Same as index.html) -->
+  <nav class="bg-white/90 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="/index.html" class="flex items-center gap-2 group">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-slate-900">Lumina</span>
+          </a>
+        </div>
+        
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/index.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+          <a href="/about.html" class="text-blue-600 font-medium transition-colors">About Us</a>
+          <a href="/product.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Product</a>
+          <a href="/contact.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+          <a href="/contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">Get Started</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" aria-expanded="false" class="text-gray-600 hover:text-gray-900 focus:outline-none p-2">
+            <i data-lucide="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+      <div class="px-4 pt-2 pb-6 space-y-2">
+        <a href="/index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Home</a>
+        <a href="/about.html" class="block px-3 py-3 rounded-md text-base font-medium text-blue-600 bg-blue-50">About Us</a>
+        <a href="/product.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Product</a>
+        <a href="/contact.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Contact</a>
+        <div class="mt-4 px-3">
+          <a href="/contact.html" class="block w-full text-center bg-blue-600 text-white px-5 py-3 rounded-lg font-medium shadow-md">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+    <!-- Page Header -->
+    <section class="bg-slate-900 py-20 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-20">
+        <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid-pattern-about" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M0 40V0H40" fill="none" stroke="white" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid-pattern-about)"/>
+        </svg>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center reveal active">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Our Story</h1>
+        <p class="text-xl text-slate-300 max-w-2xl mx-auto">Building the tools that power the next generation of digital-first businesses.</p>
+      </div>
+    </section>
+
+    <!-- Company Story & Mission -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="reveal">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Born from frustration, built for performance.</h2>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              In 2021, our founders were frustrated by the cluttered, slow, and overly complex enterprise software they were forced to use every day. They realized that businesses were wasting countless hours just trying to manage their tools rather than actually doing the work.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              Lumina was created with a singular focus: to design a workspace that is incredibly fast, intuitively organized, and beautifully crafted. We believe software should feel like a natural extension of your team's workflow, not a barrier to it.
+            </p>
+            <div class="flex items-center gap-4 mt-8 pt-8 border-t border-gray-100">
+              <div class="w-16 h-16 rounded-full overflow-hidden">
+                <img src="https://i.pravatar.cc/150?img=11" alt="CEO Avatar" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900">Sarah Jenkins</h4>
+                <p class="text-gray-500 text-sm">CEO & Co-Founder</p>
+              </div>
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 200ms;">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" alt="Team collaborating" class="rounded-2xl shadow-xl w-full">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 bg-gray-50 border-y border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+          <h2 class="text-3xl font-bold text-slate-900 mb-4">Our Core Values</h2>
+          <p class="text-lg text-gray-600">These principles guide everything we do, from product development to customer support.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 reveal">
+            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6">
+              <i data-lucide="heart" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Customer First</h3>
+            <p class="text-gray-600">Every feature we build and every decision we make starts with understanding how it will improve our customers' lives.</p>
+          </div>
+          
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 reveal" style="transition-delay: 100ms;">
+            <div class="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-6">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Relentless Simplicity</h3>
+            <p class="text-gray-600">We work hard to make complex tasks feel effortless. If a feature isn't intuitive immediately, it's not ready to ship.</p>
+          </div>
+
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 reveal" style="transition-delay: 200ms;">
+            <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Built on Trust</h3>
+            <p class="text-gray-600">We are transparent about our practices, rigorous about security, and reliable in our service delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Same as index.html) -->
+  <footer class="bg-white border-t border-gray-200 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-1">
+          <a href="/index.html" class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-slate-900">Lumina</span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed mb-6">Providing modern businesses with the tools they need to succeed in a digital-first world.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-slate-900 mb-4">Product</h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li><a href="/product.html" class="hover:text-blue-600 transition-colors">Features</a></li>
+            <li><a href="/product.html" class="hover:text-blue-600 transition-colors">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-slate-900 mb-4">Company</h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li><a href="/about.html" class="hover:text-blue-600 transition-colors">About Us</a></li>
+            <li><a href="/contact.html" class="hover:text-blue-600 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-100 pt-8 flex justify-between items-center text-sm text-gray-400">
+        <p>© 2024 Lumina Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

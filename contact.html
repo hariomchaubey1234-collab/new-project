@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Lumina Workspace</title>
+  <meta name="description" content="Get in touch with the Lumina Workspace team for support, sales, or general inquiries.">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen no-scrollbar font-sans">
+  
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center">
+          <a href="/index.html" class="flex items-center gap-2 group">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-slate-900">Lumina</span>
+          </a>
+        </div>
+        
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/index.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+          <a href="/about.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">About Us</a>
+          <a href="/product.html" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Product</a>
+          <a href="/contact.html" class="text-blue-600 font-medium transition-colors">Contact</a>
+          <a href="/contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">Get Started</a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" aria-expanded="false" class="text-gray-600 hover:text-gray-900 focus:outline-none p-2">
+            <i data-lucide="menu" class="w-7 h-7"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+      <div class="px-4 pt-2 pb-6 space-y-2">
+        <a href="/index.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Home</a>
+        <a href="/about.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">About Us</a>
+        <a href="/product.html" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600">Product</a>
+        <a href="/contact.html" class="block px-3 py-3 rounded-md text-base font-medium text-blue-600 bg-blue-50">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+    <!-- Header -->
+    <section class="bg-slate-900 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal active">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">Get in touch</h1>
+        <p class="text-xl text-slate-300 max-w-2xl mx-auto">We'd love to hear from you. Our friendly team is always here to chat.</p>
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-50 -mt-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Contact Info -->
+          <div class="lg:col-span-5 space-y-6 reveal">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+              <h3 class="text-xl font-bold text-slate-900 mb-6">Contact Information</h3>
+              
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-900">Email us</p>
+                    <p class="text-gray-500 text-sm mb-1">Our friendly team is here to help.</p>
+                    <a href="mailto:hello@luminaworkspace.com" class="text-blue-600 font-medium hover:underline">hello@luminaworkspace.com</a>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-900">Visit us</p>
+                    <p class="text-gray-500 text-sm mb-1">Come say hello at our office HQ.</p>
+                    <p class="text-slate-700">100 Innovation Drive<br>San Francisco, CA 94103<br>United States</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-900">Call us</p>
+                    <p class="text-gray-500 text-sm mb-1">Mon-Fri from 8am to 5pm.</p>
+                    <a href="tel:+15551234567" class="text-blue-600 font-medium hover:underline">+1 (555) 123-4567</a>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-8 border-gray-100">
+              
+              <h4 class="font-bold text-slate-900 mb-4">Follow us</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 bg-gray-50 border border-gray-200 text-gray-500 rounded-lg flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-all">
+                  <i data-lucide="twitter" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-gray-50 border border-gray-200 text-gray-500 rounded-lg flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-all">
+                  <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="w-10 h-10 bg-gray-50 border border-gray-200 text-gray-500 rounded-lg flex items-center justify-center hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200 transition-all">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-7 reveal" style="transition-delay: 200ms;">
+            <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100">
+              <h2 class="text-2xl font-bold text-slate-900 mb-6">Send us a message</h2>
+              
+              <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-700 p-6 rounded-xl mb-6 flex flex-col items-center text-center">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-3">
+                  <i data-lucide="check" class="w-6 h-6 text-green-600"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-1">Message sent successfully!</h3>
+                <p>Thanks for reaching out. We'll get back to you as soon as possible.</p>
+              </div>
+
+              <!-- Note: To make this functional without a custom backend, point the action to a service like Formspree -->
+              <!-- e.g. action="https://formspree.io/f/YOUR_FORM_ID" -->
+              <form id="contact-form" class="space-y-6" action="#" method="POST">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Full Name *</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition-all bg-gray-50 focus:bg-white text-slate-900" placeholder="John Doe">
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email Address *</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition-all bg-gray-50 focus:bg-white text-slate-900" placeholder="john@example.com">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">Phone Number (Optional)</label>
+                  <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition-all bg-gray-50 focus:bg-white text-slate-900" placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Message *</label>
+                  <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none transition-all bg-gray-50 focus:bg-white text-slate-900 resize-none" placeholder="How can we help you?"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                  Send Message
+                  <i data-lucide="send" class="w-5 h-5"></i>
+                </button>
+                <p class="text-xs text-gray-500 text-center mt-4">By submitting this form, you agree to our privacy policy.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Same as index.html) -->
+  <footer class="bg-white border-t border-gray-200 pt-16 pb-8 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="md:col-span-1">
+          <a href="/index.html" class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-slate-900">Lumina</span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed mb-6">Providing modern businesses with the tools they need to succeed in a digital-first world.</p>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-slate-900 mb-4">Product</h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li><a href="/product.html" class="hover:text-blue-600 transition-colors">Features</a></li>
+            <li><a href="/product.html" class="hover:text-blue-600 transition-colors">Pricing</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-bold text-slate-900 mb-4">Company</h4>
+          <ul class="space-y-3 text-sm text-gray-500">
+            <li><a href="/about.html" class="hover:text-blue-600 transition-colors">About Us</a></li>
+            <li><a href="/contact.html" class="hover:text-blue-600 transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-100 pt-8 flex justify-between items-center text-sm text-gray-400">
+        <p>© 2024 Lumina Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
